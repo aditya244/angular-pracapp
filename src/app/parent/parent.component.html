@@ -1,0 +1,7 @@
+<div class="parent">
+   <p>Parent Component</p>
+   {{childData}}
+
+
+    <app-child (notify)="parentMethod($event)" [data] = "parentString"></app-child>
+</div>

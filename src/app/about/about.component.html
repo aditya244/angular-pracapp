@@ -1,0 +1,26 @@
+<p> We will be showing data of a few users and will use pipe, custom pipe and
+    services to format the data.
+</p>
+
+<table class="table">
+    <tr class="table-row">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Dob</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor = "let user of users" class="table-row">
+        <td>{{user.id }}</td>
+        <td>{{user.name | uppercase}}</td>
+        <td>{{user.salary | currency : 'INR' : 'code'}}</td>
+        <td>{{user.dob | date : 'dd/MM/yyyy'}}</td>
+        <td>{{user.dob | age}}</td>
+    </tr>
+</table>
+
+<p> The use of JSON pipe to render the data in json format</p>
+
+<pre>
+    {{users | json}}
+</pre>

@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.danger{
+    background: #DAA49A;
+    padding: auto;
+    height: 300px;
+    width: 80%;
+    align-content: center;;
+}
+
+.danger-font{
+    color: red;
+}
