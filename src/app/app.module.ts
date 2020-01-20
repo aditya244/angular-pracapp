@@ -10,6 +10,12 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { AgePipe } from './pipe/age.pipe';
 import { UsersService } from './service/users.service';
+import { FormComponent } from './form/form.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpmoduleComponent } from './httpmodule/httpmodule.component'
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +26,16 @@ import { UsersService } from './service/users.service';
     ParentComponent,
     ChildComponent,
     AgePipe,
+    FormComponent,
+    ContactComponent,
+    HttpmoduleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

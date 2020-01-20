@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ParentComponent } from './parent/parent.component';
+import { FormComponent } from './form/form.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,14 @@ const routes: Routes = [
   {
     path: 'about',
     component : AboutComponent
+  },
+  {
+    path: 'form',
+    component : FormComponent
+  },
+  {
+    path: 'contact',
+    component : ContactComponent
   },
   {
     path: '**',

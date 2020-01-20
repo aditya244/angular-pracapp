@@ -27,4 +27,13 @@ ul li a {
 a{
     color: #fff;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
 }

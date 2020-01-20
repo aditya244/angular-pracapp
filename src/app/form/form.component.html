@@ -1,0 +1,21 @@
+<h2>Template Driven Form</h2>
+
+<form #form="ngForm" (ngSubmit)="formSubmit(form.value)">
+    <label> FirstName </label>
+    <input class="form-control" type="text" name="firstname" ngModel>
+
+    <label> LastName </label>
+    <input class="form-control" type="text" name="lastname" ngModel>
+
+    <label> City </label>
+    <input class="form-control" type="text" name="city" ngModel>
+
+    <label> Email </label>
+    <input class="form-control" type="text" name="email" ngModel>
+
+    <label> Contact No </label>
+    <input class="form-control" type="text" name="contact" ngModel>
+    <br>
+    <button class="btn btn-dark" type="submit">Submit</button>
+</form>
+

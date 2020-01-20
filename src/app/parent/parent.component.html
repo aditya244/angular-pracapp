@@ -3,5 +3,21 @@
    {{childData}}
 
 
-    <app-child (notify)="parentMethod($event)" [data] = "parentString"></app-child>
+    <app-child (notify)="parentMethod($event)" [data] = "parentString">
+        <p>
+            This is going to be projected by ng content
+        </p>
+        <p class="div1">
+            Now, we will be projecting on the basis of selector. We will be using ng class selector to render this para.
+            There is another para, which is not being rendered on the UI.    
+        </p>
+
+        <h4> Dom Element Selector projection</h4>
+
+    </app-child>
 </div>
+<br>
+
+<app-httpmodule>
+    
+</app-httpmodule>
